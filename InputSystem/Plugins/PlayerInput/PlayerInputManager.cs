@@ -477,7 +477,7 @@ namespace UnityEngine.InputSystem
 
         [SerializeField] internal PlayerNotifications m_NotificationBehavior;
         [Tooltip("Set a limit for the maximum number of players who are able to join.")]
-        [SerializeField] internal int m_MaxPlayerCount = -1;
+        public int m_MaxPlayerCount = -1;
         [SerializeField] internal bool m_AllowJoining = true;
         [SerializeField] internal PlayerJoinBehavior m_JoinBehavior;
         [SerializeField] internal PlayerJoinedEvent m_PlayerJoinedEvent;
@@ -487,7 +487,7 @@ namespace UnityEngine.InputSystem
         [SerializeField] internal bool m_SplitScreen;
         [SerializeField] internal bool m_MaintainAspectRatioInSplitScreen;
         [Tooltip("Explicitly set a fixed number of screens or otherwise allow the screen to be divided automatically to best fit the number of players.")]
-        [SerializeField] internal int m_FixedNumberOfSplitScreens = -1;
+        public int m_FixedNumberOfSplitScreens = -1;
         [SerializeField] internal Rect m_SplitScreenRect = new Rect(0, 0, 1, 1);
 
         [NonSerialized] private bool m_JoinActionDelegateHooked;
